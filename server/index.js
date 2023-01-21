@@ -9,10 +9,11 @@ import clientRoutes from './routes/client.js';
 import generalRoutes from './routes/general.js';
 import managementRoutes from './routes/management.js';
 import salesRoutes from './routes/sales.js';
-
 // data imports
+import Product from './models/Product.js';
+import ProductStat from './models/ProductStat.js';
 // import User from './models/User.js';
-// import { dataUser } from './data/index.js';
+import { dataProduct, dataProductStat } from './data/index.js';
 
 /* Config */
 dotenv.config();
@@ -49,5 +50,7 @@ mongoose
     /* ONLY ADD ONE TIME */
     // User.insertMany(dataUser);
     // { _id: ObjectId('63701cc1f03239b7f700000e') }
+    // Product.insertMany(dataProduct);
+    // ProductStat.insertMany(dataProductStat);
   })
   .catch((error) => console.log(`${error} - did not connect`));
