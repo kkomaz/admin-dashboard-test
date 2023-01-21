@@ -1,5 +1,5 @@
 import Product from '../models/Product.js';
-import User from '../models/user.js';
+import User from '../models/UserModel.js';
 import ProductStat from '../models/ProductStat.js';
 import Transaction from '../models/Transaction.js';
 
